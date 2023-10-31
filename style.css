@@ -75,8 +75,9 @@ header .navbar {
     flex-wrap: wrap;
 }
 
-.navbar .logo a {
+.navbar .heading a {
     text-decoration: none;
+    display: flex;
     font-size: 22px;
     color: #000;
     font-weight: 500;
@@ -109,13 +110,62 @@ header .text-content {
 }
 
 .text-content h2 {
+    color: black;
+    border-right: 2px solid;
     font-size: 27px;
     font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 3s steps(50) 1s 1 normal both, blinkcursor 500ms infinite;
 }
 
-.text-content p {
-    font-size: 15px;
-    margin-top: 10px;
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    
+    to {
+        width: 118%;
+    }
+}
+
+@keyframes blinkcursor {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+@media (max-width:849px) {
+    header .text-content h2 {
+        position: relative;
+        height: 10%;
+        text-align: center;
+        overflow-wrap: break-word;
+        white-space: normal;
+        border-right: 0px solid hsla(0, 0%, 80%, 0);
+        text-overflow: ellipsis;
+        display: block;
+    
+    }
+}
+
+@media (max-width:1599px) {
+    header .text-content h2 {
+        position: relative;
+        height: 10%;
+        text-align: center;
+        overflow-wrap: break-word;
+        white-space: normal;
+        border-right: 0px solid hsla(0, 0%, 80%, 0);
+        text-overflow: ellipsis;
+        display: block;
+    
+    }
 }
 
 @media (max-width:850px) {
@@ -132,7 +182,7 @@ header .text-content {
 
     header .text-content {
         margin: 30px 0 0 20px;
-        width: 70%;
+         width: 56%; /* 70 */
     }
 
     header .text-content h2 {
