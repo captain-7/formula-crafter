@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-image: url(https://image.slidesdocs.com/responsive-images/background/digital-education-on-the-go-mobile-website-displaying-learning-across-devices-powerpoint-background_8bd196e2be__960_540.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.heading {
+    position: relative;
+    justify-content: center;
+    display: inline-flex;
+    text-transform: uppercase;
+    top: 4rem;
+    left: 37%;
+    font-size: 30px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.buttons {
+    width: fit-content;
+    position: relative;
+    top: 17rem;
+    display: inline-flex;
+    flex-direction: row;
+    left: -10%;
+    /* height: 5%; */
+}
+
+button {
+    color: black;
+    width: 100%;
+    position: relative;
+    margin: 80px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 12px;
+    margin-bottom: 5em;
+    animation: colorful 6s infinite;
+}
+
+.button-1 {
+    position: relative;
+    /* margin: 16px;
+    padding: 12px; */
+    border: 10%;
+    border-style: solid;
+    border-color: red;
+    background: rgb(255, 146, 231);
+}
+
+.button-2 {
+    position: relative;
+    /* margin: 16px;
+    padding: 12px; */
+    border: 10%;
+    border-style: solid;
+    border-color: red;
+    background: rgb(248, 144, 102);
+}
+
+.button-3 {
+    position: relative;
+    /* margin: 16px;
+    padding: 10px; */
+    border: 10%;
+    border-style: solid;
+    border-color: red;
+    background: rgb(154, 201, 255);
+}
+
+
+
+.container::-webkit-scrollbar {
+    width: auto;
+}
