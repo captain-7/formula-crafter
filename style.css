@@ -116,7 +116,7 @@ header .text-content {
     font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 3s steps(50) 1s 1 normal both, blinkcursor 500ms infinite;
+    animation: typewriter 4s steps(50) 1s 1 normal both, blinkcursor 500ms infinite;
 }
 
 @keyframes typewriter {
@@ -125,7 +125,7 @@ header .text-content {
     }
     
     to {
-        width: 118%;
+        width: 123%;
     }
 }
 
@@ -154,19 +154,19 @@ header .text-content {
     }
 }
 
-@media (max-width:1599px) {
+/* @media (max-width:1599px) {
     header .text-content h2 {
         position: relative;
         height: 10%;
         text-align: center;
         overflow-wrap: break-word;
         white-space: normal;
-        border-right: 0px solid hsla(0, 0%, 80%, 0);
+        border-right: 1px solid hsla(0, 0%, 80%, 0);
         text-overflow: ellipsis;
         display: block;
     
     }
-}
+} */
 
 @media (max-width:850px) {
     header .navbar {
