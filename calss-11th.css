@@ -1,0 +1,82 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20200604/pngtree-cute-hand-drawn-style-mathematics-education-green-stripes-background-image_337566.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 0;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+span {
+    letter-spacing: 2px;
+}
+
+.overflow-scroll {
+    overflow-y: scroll;
+}
+
+.container {
+    width: 85%;
+    height: fit-content;
+    position: relative;
+    margin: 2% auto;
+    margin-top: 2%;
+    max-height: 90%;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.container::-webkit-scrollbar {
+    width: auto;
+}
+
+.glass {
+    background: rgb(255, 199, 199);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.527);
+    border:1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 85%;
+        /* height: 100%; */
+        position: relative;
+        margin: 2% auto;
+        margin-top: 3%;
+        max-height: 95%;
+        overflow-y: auto;
+        padding: 3%;
+    }
+
+    .glass {
+        width: 90%;
+        border-radius: 20px;
+    }
+}
